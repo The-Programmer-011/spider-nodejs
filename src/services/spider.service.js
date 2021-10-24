@@ -36,7 +36,7 @@ var handleRequest = function(doc) {
     // new page crawled
     // console.log(doc);
     // console.log("=======================================================================================================================================");
-    if(pageCount >= 200){
+    if(pageCount >= 10000){
         spider.full();
         return 0;
     }
