@@ -5,10 +5,10 @@ export default class SpiderController {
 
     search = async (req, res) => {
         try {
-          const { search, pages } = req.params
-          spiderStart(search, pages);
+          const { search, limit } = req.params
+          spiderStart(search, limit);
           console.log("Spider finalizado");
-          return res.status(200).json({msg: "Rota em funcionamento, pesquisa: ", search});
+          return res.status(200).json({msg: "Spider em execução", search});
         } catch (e) {
           console.log("Spider, error. ", e);
           throw e;
