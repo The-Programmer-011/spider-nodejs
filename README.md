@@ -16,7 +16,7 @@
 ## Execução
 
 * Para iniciar o spider, execute o comando:
-* ```npm start````
+* ```npm start```
 
 ## Utilização
 
