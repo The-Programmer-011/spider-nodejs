@@ -5,8 +5,8 @@ export default class SpiderController {
 
     search = async (req, res) => {
         try {
-          const { search } = req.params
-          spiderStart(search);
+          const { search, pages } = req.params
+          spiderStart(search, pages);
           console.log("Spider finalizado");
           return res.status(200).json({msg: "Rota em funcionamento, pesquisa: ", search});
         } catch (e) {

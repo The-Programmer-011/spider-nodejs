@@ -2,6 +2,7 @@ import Spider from "node-spider";
 import fs from "fs";
  
 var pageCount = 0;
+var g_pages;
 
 var spider = new Spider({
     // How many requests can be run in parallel
@@ -36,7 +37,7 @@ var handleRequest = function(doc) {
     // new page crawled
     // console.log(doc);
     // console.log("=======================================================================================================================================");
-    if(pageCount >= 10000){
+    if(g_pages && pageCount >= g_pages){
         spider.full();
         return 0;
     }
@@ -67,6 +68,7 @@ var handleRequest = function(doc) {
 };
 
 // start crawling
-export function spiderStart(search){
+export function spiderStart(search, pages){
+    g_pages = pages;
     spider.queue('https://www.google.com.br/search?q=' + search, handleRequest);
 }
