@@ -9,7 +9,7 @@
 
 ## Instalação
 
-* * No repositório do projeto, rode o comando:
+* No repositório do projeto, rode o comando:
 * ```npm install```
 
 ## Execução
