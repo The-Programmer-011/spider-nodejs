@@ -9,8 +9,7 @@
 
 ## Instalação
 
-* Abra a pasta repo;
-* Rode o comando:
+* * No repositório do projeto, rode o comando:
 * ```npm install```
 
 ## Execução
