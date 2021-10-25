@@ -19,7 +19,7 @@
 
 ## Utilização
 
-* Ao inicar o spider, utilize ou o Postman ou um servidor web.
+* Ao inicar o spider, utilize ou o Postman ou um navegador web.
 * O spider roda pela porta 3000 por default.
 * Para começar a fazer o crawl, digite na barra de busca do seu navegador:
 * ```localhost:3000/spider/search/:termo_de_pesquisa/limit/:limite_de_paginas```
